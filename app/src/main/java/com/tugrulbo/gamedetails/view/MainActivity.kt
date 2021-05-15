@@ -9,7 +9,6 @@ import com.tugrulbo.gamedetails.R
 import com.tugrulbo.gamedetails.fragments.HomePage
 import com.tugrulbo.gamedetails.fragments.Liked
 import com.tugrulbo.gamedetails.fragments.adapter.ViewPager
-import com.tugrulbo.videogamesdatabase.adapter.ImageSliderAdapter
 import com.tugrulbo.videogamesdatabase.adapter.ListAdapter
 import com.tugrulbo.videogamesdatabase.model.GetListModel
 import com.tugrulbo.videogamesdatabase.model.Results

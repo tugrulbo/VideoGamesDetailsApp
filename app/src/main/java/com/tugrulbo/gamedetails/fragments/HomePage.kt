@@ -13,8 +13,8 @@ import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tugrulbo.gamedetails.R
+import com.tugrulbo.gamedetails.adapter.ImageSliderAdapter
 import com.tugrulbo.gamedetails.view.GameDetails
-import com.tugrulbo.videogamesdatabase.adapter.ImageSliderAdapter
 import com.tugrulbo.videogamesdatabase.adapter.ListAdapter
 import com.tugrulbo.videogamesdatabase.model.GetListModel
 import com.tugrulbo.videogamesdatabase.model.Results
