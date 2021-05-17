@@ -12,10 +12,10 @@
 ## Key
 
 "Service" klasörü altındaki "GetGames" dosyasına RAWG adresinden aldığınız anahtarı eklemeyi unutmayın.
-![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233674.png) 
-![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233722.png) 
-![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233733.png) 
-![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233722.png) 
-![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233856.png) 
-![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233863.png) 
-![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233876.png) 
+![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233674.png):height: 100px :width: 200 px :scale: 50 % 
+![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233722.png):height: 100px :width: 200 px :scale: 50 % 
+![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233733.png) :height: 100px :width: 200 px :scale: 50 % 
+![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233722.png) :height: 100px :width: 200 px :scale: 50 % 
+![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233856.png) :height: 100px :width: 200 px :scale: 50 % 
+![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233863.png) :height: 100px :width: 200 px :scale: 50 % 
+![Screenshot](https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233876.png) :height: 100px :width: 200 px :scale: 50 % 
