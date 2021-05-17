@@ -3,19 +3,17 @@ package com.tugrulbo.videogamesdatabase.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.tugrulbo.gamedetails.R
 import com.tugrulbo.videogamesdatabase.model.Results
-import kotlinx.android.synthetic.main.fragment_home_page.view.*
 import kotlinx.android.synthetic.main.item_recyclerview.view.*
 import java.util.*
 
-class ListAdapter(private var videoGameList: ArrayList<Results>, private var listener: Listener) : RecyclerView.Adapter<ListAdapter.RowHolder>() {
+class SearchAdapter(private var videoGameList: ArrayList<Results>, private var listener: Listener) : RecyclerView.Adapter<SearchAdapter.RowHolder>() {
 
     interface Listener{
-        fun onItemClick(results: ArrayList<Results>, position: Int){
+        fun searchItemClick(results: ArrayList<Results>, position: Int){
         }
     }
 
@@ -25,18 +23,20 @@ class ListAdapter(private var videoGameList: ArrayList<Results>, private var lis
         fun bind(resultsArray: ArrayList<Results>, position: Int, listener:Listener){
 
             itemView.setOnClickListener{
-                listener.onItemClick(resultsArray,position)
+                listener.searchItemClick(resultsArray,position)
             }
-                if (position+3 < (resultsArray.size)-1) {
-                    itemView.itemName.text = resultsArray!![position+3]?.name.toString()
-                    itemView.itemRating.text = resultsArray!![position+3]?.rating.toString()
-                    itemView.itemReleased.text = resultsArray!![position+3]?.released.toString()
-                    var imageURL = resultsArray!![position+3]?.backgroundImage.toString()
+                if (position < resultsArray.size) {
+                    itemView.itemName.text = resultsArray!![position]?.name.toString()
+                    itemView.itemRating.text = resultsArray!![position]?.rating.toString()
+                    itemView.itemReleased.text = resultsArray!![position]?.released.toString()
+                    var imageURL = resultsArray!![position]?.backgroundImage.toString()
                     Picasso.get().load("${imageURL}").resize(90, 80).centerCrop()
                         .into(itemView.itemImage);
 
 
                 }
+
+
 
         }
     }

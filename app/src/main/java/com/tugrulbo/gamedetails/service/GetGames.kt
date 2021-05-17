@@ -11,9 +11,9 @@ import retrofit2.http.Path
 interface GetGames {
 
 
-    @GET(value = "games?key=d2a9c4ecd4884d768f3ed82b573f8dec")
+    @GET(value = "games?key=KEY")
     fun getVideoGamesData(): Call<GetListModel>
 
-    @GET(value= "{id}?key=d2a9c4ecd4884d768f3ed82b573f8dec")
+    @GET(value= "{id}?key=KEY")
     fun getGamesDetails(@Path("id") gameId:Int?): Call<GameDetailsModel>
 }

@@ -22,7 +22,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.*
 
-class MainActivity : AppCompatActivity(), ListAdapter.Listener {
+class MainActivity : AppCompatActivity(){
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity(), ListAdapter.Listener {
         tabs.getTabAt(0)!!.setIcon(R.drawable.homepage)
         tabs.getTabAt(1)!!.setIcon(R.drawable.liked)
     }
+
 
 
 }

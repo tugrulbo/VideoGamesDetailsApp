@@ -2,23 +2,18 @@ package com.tugrulbo.gamedetails.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import android.view.View
 import com.squareup.picasso.Picasso
 import com.tugrulbo.gamedetails.R
+import com.tugrulbo.gamedetails.dbhelpers.DBHelper
 import com.tugrulbo.gamedetails.model.GameDetailsModel
-import com.tugrulbo.videogamesdatabase.adapter.ListAdapter
 import com.tugrulbo.videogamesdatabase.service.GetGames
 import kotlinx.android.synthetic.main.activity_game_details.*
-import kotlinx.android.synthetic.main.fragment_home_page.*
-import kotlinx.android.synthetic.main.item_viewpager.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.*
 
 class GameDetails : AppCompatActivity() {
 
@@ -32,7 +27,6 @@ class GameDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_details)
         gameId = intent.getIntExtra("gameId",0)
-        Toast.makeText(this,"${gameId}",Toast.LENGTH_LONG).show()
         loadData()
     }
 
@@ -66,5 +60,11 @@ class GameDetails : AppCompatActivity() {
 
 
         })
+    }
+
+    fun likeImage(view: View) {
+        gameId = intent.getIntExtra("gameId",0)
+        var db = DBHelper(this)
+        db.updateData(gameId!!)
     }
 }

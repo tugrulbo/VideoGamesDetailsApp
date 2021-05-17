@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_home_page.view.*
 import kotlinx.android.synthetic.main.item_recyclerview.view.*
 import java.util.*
 
-class ListAdapter(private var videoGameList: ArrayList<Results>, private var listener: Listener) : RecyclerView.Adapter<ListAdapter.RowHolder>() {
+class LikedAdapter(private var videoGameList: ArrayList<Results>, private var listener: Listener) : RecyclerView.Adapter<LikedAdapter.RowHolder>() {
 
     interface Listener{
         fun onItemClick(results: ArrayList<Results>, position: Int){
@@ -27,23 +27,25 @@ class ListAdapter(private var videoGameList: ArrayList<Results>, private var lis
             itemView.setOnClickListener{
                 listener.onItemClick(resultsArray,position)
             }
-                if (position+3 < (resultsArray.size)-1) {
-                    itemView.itemName.text = resultsArray!![position+3]?.name.toString()
-                    itemView.itemRating.text = resultsArray!![position+3]?.rating.toString()
-                    itemView.itemReleased.text = resultsArray!![position+3]?.released.toString()
-                    var imageURL = resultsArray!![position+3]?.backgroundImage.toString()
+
+                if (position < resultsArray.size) {
+                    itemView.itemName.text = resultsArray!![position]?.name.toString()
+                    itemView.itemRating.text = resultsArray!![position]?.rating.toString()
+                    itemView.itemReleased.text = resultsArray!![position]?.released.toString()
+                    var imageURL = resultsArray!![position]?.backgroundImage.toString()
                     Picasso.get().load("${imageURL}").resize(90, 80).centerCrop()
                         .into(itemView.itemImage);
 
 
                 }
 
+
+
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RowHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_recyclerview,parent,false)
-
         return RowHolder(view)
     }
 
