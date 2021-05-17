@@ -17,7 +17,6 @@
 <div>
  <img src="https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233674.png" width="200"/>
 <img src="https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233722.png" width="200"/>
-<img src="https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233733.png" width="200"/>
+<img src="https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621233876.png" width="200"/>
 <img src="https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621234312.png" width="200"/>
-<img src=" https://github.com/tugrulbo/VideoGamesDetailsApp/blob/main/Screenshot_1621234312.png" width="200"/>
  </div>
