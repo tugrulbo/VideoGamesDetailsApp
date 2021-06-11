@@ -1,5 +1,5 @@
 # Video Games APP
- [RAWG](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) adresinden aldığım key ile dökümantasyonunu kullanarak video oyun listesi ve seçilen oyun için detaylı bilgi alma işlemi yapıldı. Uygulama içindeki arama kısmı lokal veritabanı kullanmaktadır. Favoriler kısmı ise aynı şekilde lokal veritabanını kullanmaktadır. Beğenilen oyunları veritabanında değişiklik yaparak çekmektedir.
+ [RAWG](https://rawg.io) adresinden aldığım key ile dökümantasyonunu kullanarak video oyun listesi ve seçilen oyun için detaylı bilgi alma işlemi yapıldı. Uygulama içindeki arama kısmı lokal veritabanı kullanmaktadır. Favoriler kısmı ise aynı şekilde lokal veritabanını kullanmaktadır. Beğenilen oyunları veritabanında değişiklik yaparak çekmektedir.
 
 
 ## Kütüphaneler
